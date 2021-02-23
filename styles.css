@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Eskal; /* Имя шрифта */
+  src: url(fonts/eskal.ttf); /* Путь к файлу со шрифтом */
+}
+
+element {
+  --screenWidth: 1280px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vw;
+  /*------Фон в клетку -------------------------------*/
+  background: linear-gradient(#bbb, transparent 1px),
+    linear-gradient(90deg, #bbb, transparent 1px);
+  background-size: 15px 15px;
+  background-position: center center;
+  /*--------------------------------------------------*/
+  -webkit-text-size-adjust: none;
+  overflow: hidden;
+}
+
+header {
+  width: --var(--screenWidth);
+  height: 100px;
+}
+
+.title {
+  position: absolute;
+  font-family: Eskal;
+  background-color: transparent;
+  color: rgb(106, 9, 197);
+  font-size: 3rem;
+  left: 400px;
+}
+
+.shpitzHeader {
+  position: absolute;
+  left: 950px;
+}
+
+.wrapper {
+  width: --var(--screenWidth);
+  height: 320px;
+  display: flex; /**/
+  flex-direction: row; /**/
+  justify-content: space-around; /**/
+}
+
+aside,
+main {
+  height: 100%;
+  /*display: inline-block;
+  vertical-align: top;*/
+  font-family: Eskal;
+}
+aside {
+  width: 20%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  display: inline-block;
+  color: rgb(102, 0, 255);
+  border-color: rgb(102, 0, 255);
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.run_btn {
+  font-family: Eskal;
+  color: rgb(102, 0, 255);
+  font-size: 34px;
+}
+
+main {
+  width: 60%;
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(102, 0, 255);
+  /*color: #3355aa;*/
+}
+
+.a,
+.b,
+.equal,
+.response {
+  display: inline-block;
+}
+.multiply {
+  display: inline;
+  font-size: 3rem;
+  top: -20px;
+  position: relative;
+}
+
+.response {
+  font-family: Eskal;
+  font-size: 7rem;
+  color: red;
+  border: 0;
+  width: 110px;
+  max-lines: 1;
+  text-align: center;
+  font-weight: bold;
+  caret-color: rgb(102, 0, 255);
+  background-color: transparent;
+}
+.response::placeholder {
+  font-size: 7rem;
+  color: rgb(102, 0, 255);
+  font-family: inherit;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.errlist {
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0;
+  display: block;
+  height: 245px;
+  margin-top: -30px;
+  overflow-y: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  width: --var(--screenWidth);
+  height: 150px;
+}
+
+.shpitz {
+  position: absolute;
+}
+
+.sausage {
+  position: absolute;
+  left: 200px;
+  top: 450px;
+}
+
+.opt_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.min,
+.max {
+  width: 15%;
+}
+.min,
+.max,
+.label,
+.sausageSpeed {
+  font-family: Eskal;
+  font-size: 24px;
+  color: rgb(102, 0, 255);
+  text-align: center;
+}

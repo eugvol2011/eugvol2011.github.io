@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Назубок</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Таблица Умножения Назубок</h1>
+      <img
+        class="shpitzHeader"
+        src="img/shpitz_header_png100.png"
+        alt="shpitzHeader"
+      />
+    </header>
+    <div class="wrapper">
+      <aside class="leftSide">
+        <h3>Опции</h3>
+        <div class="opt_container">
+          <label for="min" class="label">мин</label>
+          <input
+            type="number"
+            id="min"
+            class="min"
+            value="1"
+            step="1"
+            min="0"
+            max="9"
+            title="min"
+          />
+          <label for="min" class="label">мaкс</label>
+          <input
+            type="number"
+            id="max"
+            class="max"
+            value="9"
+            step="1"
+            min="0"
+            max="9"
+            title="max"
+          />
+        </div>
+        <br />
+        <label for="sausageSpeed" class="label">Скорость колбасы</label>
+        <input
+          type="range"
+          id="sausageSpeed"
+          class="sausageSpeed"
+          min="100"
+          max="2000"
+          step="1"
+          value="500"
+        />
+        <br /><br />
+        <button id="run_btn" class="run_btn" type="button">Начать</button>
+      </aside>
+      <!--
+    -->
+      <main>
+        <h2 id="a" class="a">0</h2>
+        <h2 id="multiply" class="multiply">X</h2>
+        <h2 id="b" class="b">0</h2>
+        <h2 id="equal" class="equal">=</h2>
+        <input
+          id="response"
+          class="response"
+          type="text"
+          placeholder="0"
+          maxlength="2"
+          disabled
+        />
+      </main>
+      <!--
+    -->
+      <aside class="rightSide">
+        <h3>Ошибки</h3>
+        <ul id="errlist" class="errlist"></ul>
+      </aside>
+    </div>
+    <footer>
+      <img id="shpitz" class="shpitz" src="/img/shpitz150.png" alt="shpitz" />
+      <img
+        id="sausage"
+        class="sausage"
+        src="/img/sausage75.png"
+        alt="sausage"
+      />
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
